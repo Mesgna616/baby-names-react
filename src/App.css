@@ -1,20 +1,57 @@
-.App {
+h1{
+  font-family: fantasy;
   text-align: center;
+  font-size: 35px;
+
+}
+.name{
+  color:lightslategray;
+}
+.App-body{
+  display:grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: auto;
+  gap: 6px;
+  text-align: center;
+  margin:20px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(128, 0, 60), rgb(13, 1, 15));
+  border-image-slice: 1;
+  padding: 25px; 
+  border: 4px solid linear-gradient(to right, darkblue, darkorchid) border-box;
+
+}
+.App p{
+  font-size: 2rem;
+  text-align: start;
+}
+.App{
+  display: flex;
+  justify-content: space-evenly;
 }
 
+
+
+.App-body p{
+padding: 15px;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input{
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  border-style: none;
+  padding: 1rem 2.5rem;
+  margin-bottom:2rem;
+  box-shadow: rgb(4, 22, 38) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
+
+
 .App-header {
-  background-color: #282c34;
+  background-color: #9b522d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,12 +64,26 @@
 .App-link {
   color: #61dafb;
 }
+.f, .female{
+  background-color: rgb(219, 59, 174);
+  font-size: 20px;
+ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.m, .male{
+  font-size: 20px;
+  background-color: rgb(110, 231, 112);
+}
+.all,.female, .male{
+ 
+	border-radius:28px;
+	border:1px solid #2421e0;
+	display:inline-block;
+	cursor:pointer;
+	color:#010000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
 }

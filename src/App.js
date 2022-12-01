@@ -6,8 +6,8 @@ import CreateNames from "./CreateNames";
 
 
 function filterNames(input) {
-  return names.filter((value) =>
-    value.name.toLowerCase().includes(input.toLowerCase())
+  return names.filter((name) =>
+    name.name.toLowerCase().includes(input.toLowerCase())
   );
 }
 
@@ -18,7 +18,7 @@ function App() {
   const[favoriteNames, setFavoriteNames]=useState([]);
 
   function filterGender(input) {
-    return names.filter((value) =>value.sex.toLowerCase()===input);
+    return names.filter((gender) =>gender.sex.toLowerCase()===input);
   }
  
   return (

@@ -11,16 +11,16 @@ const CreateNames = ({
     <div className="App-body">
       {arrayOfNames
         .sort((a, b) => a.name.localeCompare(b.name))
-        .map((value, index) => {
+        .map((name, index) => {
           return (
             <SingleName
-              value={value}
+              name={name}
               index={index}
               onClick={() => {
-                setFavoriteNames(favoriteNames.concat(value));
+                setFavoriteNames(favoriteNames.concat(name));
                 setArrayOfNames(
                   arrayOfNames.filter((clickedName) => {
-                    return value.name !== clickedName.name;
+                    return name.name !== clickedName.name;
                   })
                 );
               }}

@@ -13,7 +13,7 @@ const Favorites = ({
       {favoriteNames.map((favoriteName, index) => {
         return (
           <SingleName
-            value={favoriteName}
+            name={favoriteName}
             index={index}
             onClick={() => {
               setArrayOfNames(arrayOfNames.concat(favoriteName));
